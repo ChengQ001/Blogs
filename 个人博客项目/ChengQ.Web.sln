@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChengQ.Web", "ChengQ.Web\ChengQ.Web.csproj", "{398A95B8-3189-4D74-95BC-311023894B66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2数据驱动层", "2数据驱动层", "{F5743133-F8C1-4FCD-B13C-6A9AAF23FDFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1公共实用工具层", "1公共实用工具层", "{73FA8435-54B8-4717-AB97-903A74D51ACF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChengQ.Data", "ChengQ.Data\ChengQ.Data.csproj", "{79EA281C-DEEC-4DDF-BF18-22536DEEBDDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChengQ.Common", "ChengQ.Common\ChengQ.Common.csproj", "{DD1D7265-7964-4048-8EA5-6E9A2583C157}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3数据访问业务层", "3数据访问业务层", "{9CC96579-E059-45D8-87CE-0E91A97AE43C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChengQ.Services", "ChengQ.Services\ChengQ.Services.csproj", "{78A814C0-D937-4B97-AF74-4003E905C8B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChengQ.BLL", "ChengQ.BLL\ChengQ.BLL.csproj", "{FB6AAF0C-329F-4608-A8BE-F50F62960CA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChengQ.Entity", "Entity\ChengQ.Entity.csproj", "{36E56E38-AFB9-4D06-9AB3-36292D79CA9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{398A95B8-3189-4D74-95BC-311023894B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{398A95B8-3189-4D74-95BC-311023894B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{398A95B8-3189-4D74-95BC-311023894B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{398A95B8-3189-4D74-95BC-311023894B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79EA281C-DEEC-4DDF-BF18-22536DEEBDDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79EA281C-DEEC-4DDF-BF18-22536DEEBDDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79EA281C-DEEC-4DDF-BF18-22536DEEBDDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79EA281C-DEEC-4DDF-BF18-22536DEEBDDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1D7265-7964-4048-8EA5-6E9A2583C157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1D7265-7964-4048-8EA5-6E9A2583C157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1D7265-7964-4048-8EA5-6E9A2583C157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1D7265-7964-4048-8EA5-6E9A2583C157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A814C0-D937-4B97-AF74-4003E905C8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A814C0-D937-4B97-AF74-4003E905C8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A814C0-D937-4B97-AF74-4003E905C8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A814C0-D937-4B97-AF74-4003E905C8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB6AAF0C-329F-4608-A8BE-F50F62960CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB6AAF0C-329F-4608-A8BE-F50F62960CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB6AAF0C-329F-4608-A8BE-F50F62960CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB6AAF0C-329F-4608-A8BE-F50F62960CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E56E38-AFB9-4D06-9AB3-36292D79CA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E56E38-AFB9-4D06-9AB3-36292D79CA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E56E38-AFB9-4D06-9AB3-36292D79CA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E56E38-AFB9-4D06-9AB3-36292D79CA9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79EA281C-DEEC-4DDF-BF18-22536DEEBDDA} = {F5743133-F8C1-4FCD-B13C-6A9AAF23FDFF}
+		{DD1D7265-7964-4048-8EA5-6E9A2583C157} = {73FA8435-54B8-4717-AB97-903A74D51ACF}
+		{78A814C0-D937-4B97-AF74-4003E905C8B5} = {9CC96579-E059-45D8-87CE-0E91A97AE43C}
+		{FB6AAF0C-329F-4608-A8BE-F50F62960CA8} = {9CC96579-E059-45D8-87CE-0E91A97AE43C}
+		{36E56E38-AFB9-4D06-9AB3-36292D79CA9C} = {9CC96579-E059-45D8-87CE-0E91A97AE43C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {789FAC85-F20F-4FEE-BA25-9F993C9422F9}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://chengqing1993.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ChengQ.BLL\\ChengQ.BLL.csproj
+		SccProjectTopLevelParentUniqueName1 = ChengQ.Web.sln
+		SccProjectName1 = ChengQ.BLL
+		SccLocalPath1 = ChengQ.BLL
+		SccProjectUniqueName2 = ChengQ.Common\\ChengQ.Common.csproj
+		SccProjectTopLevelParentUniqueName2 = ChengQ.Web.sln
+		SccProjectName2 = ChengQ.Common
+		SccLocalPath2 = ChengQ.Common
+		SccProjectUniqueName3 = ChengQ.Data\\ChengQ.Data.csproj
+		SccProjectTopLevelParentUniqueName3 = ChengQ.Web.sln
+		SccProjectName3 = ChengQ.Data
+		SccLocalPath3 = ChengQ.Data
+		SccProjectUniqueName4 = ChengQ.Services\\ChengQ.Services.csproj
+		SccProjectTopLevelParentUniqueName4 = ChengQ.Web.sln
+		SccProjectName4 = ChengQ.Services
+		SccLocalPath4 = ChengQ.Services
+		SccProjectUniqueName5 = ChengQ.Web\\ChengQ.Web.csproj
+		SccProjectName5 = ChengQ.Web
+		SccLocalPath5 = ChengQ.Web
+		SccProjectUniqueName6 = Entity\\ChengQ.Entity.csproj
+		SccProjectTopLevelParentUniqueName6 = ChengQ.Web.sln
+		SccProjectName6 = Entity
+		SccLocalPath6 = Entity
+	EndGlobalSection
+EndGlobal

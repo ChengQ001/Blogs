@@ -1,0 +1,17 @@
+﻿//{
+//  "ConnectionStrings": {
+//    "DefaultConnection": "server=bds270400305.my3w.com;database=bds270400305_db;uid=bds270400305;pwd=cheng1993;Connect Timeout=200"
+
+//  }
+//}
+
+
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source =118.24.105.20; port = 3306; Initial Catalog =Blogs; user id = root; password =ChengQing1993; charset = utf8;Allow User Variables=True;"
+
+  }
+}
+
+
+ //<add name="DefaultConnectionString" connectionString="Data Source = 10.100.21.3; port = 3306; Initial Catalog =zhilingplatform ; user id = root; password = zhyq@888; charset = utf8;Allow User Variables=True;" providerName="MySql.Data.MySqlClient" />

@@ -1,0 +1,64 @@
+[
+  {
+    "title": "后台首页",
+    "icon": "icon-computer",
+    "href": "/Admin/Home/Main",
+    "spread": false
+  },
+  {
+    "title": "文章管理",
+    "icon": "&#xe630;",
+    "href": "",
+    "spread": false,
+    "children": [
+      {
+        "title": "文章列表",
+        "icon": "icon-text",
+        "href": "/admin/home/list",
+        "spread": false
+      },
+      {
+        "title": "文章...",
+        "icon": "&#xe609;",
+        "href": "",
+        "spread": false,
+        "target": "_blank"
+      }
+    ]
+  },
+  {
+    "title": "待开发",
+    "icon": "&#xe64c;",
+    "href": "",
+    "spread": false
+  },
+  {
+    "title": "待开发",
+    "icon": "&#xe631;",
+    "href": "",
+    "spread": false
+  },
+  {
+    "title": "待开发",
+    "icon": "&#xe630;",
+    "href": "",
+    "spread": false,
+    "children": [
+      {
+        "title": "404待开发",
+        "icon": "&#xe61c;",
+        "href": "",
+        "spread": false
+      },
+      {
+        "title": "待开发",
+        "icon": "&#xe609;",
+        "href": "",
+        "spread": false
+      }
+    ]
+  }
+]
+
+ 
+ 

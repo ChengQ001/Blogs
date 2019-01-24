@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>ChengQ博客</title>
+    <meta name="description" content="收集分享破解各种黑科技、火星科技、实用好用的、新奇有趣的工具软件。" />
+    <meta name="keywords" content="工具软件" />
+    <link rel="shortcut icon" href="~/web/picture/tupian32.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/web/picture/tupian128.ico" />
+
+    <link rel='stylesheet' id='begin-style-css' href='~/web/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fonts-css' href='~/web/css/fonts.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='iconfontd-css' href='~/web/css/font_441030_36d9kr3l21g1ra4i.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='codecolorer-css' href='~/web/css/codecolorer.css' type='text/css' media='screen' />
+    <script type='text/javascript' src='~/web/js/jquery.min.js'></script>
+    <script type="text/javascript">
+
+        var int = self.setInterval(function () {
+            var date1 = '2018/06/19 21:27:00';  //开始时间
+            var date2 = new Date();    //结束时间
+            var date3 = date2.getTime() - new Date(date1).getTime();   //时间差的毫秒数      
+            //------------------------------
+            //计算出相差天数
+            var days = Math.floor(date3 / (24 * 3600 * 1000))
+            //计算出小时数
+            var leave1 = date3 % (24 * 3600 * 1000)    //计算天数后剩余的毫秒数
+            var hours = Math.floor(leave1 / (3600 * 1000))
+            //计算相差分钟数
+            var leave2 = leave1 % (3600 * 1000)        //计算小时数后剩余的毫秒数
+            var minutes = Math.floor(leave2 / (60 * 1000))
+            //计算相差秒数
+            var leave3 = leave2 % (60 * 1000)      //计算分钟数后剩余的毫秒数
+            var seconds = Math.round(leave3 / 1000)
+            $('#daojishi').html(" 建站 " + days + "天 " + hours + "小时 " + minutes + " 分钟" + seconds + " 秒");
+        }, 1000);
+    </script>
+
+    <style>
+        #site-nav .down-menu > li > a:hover, #site-nav .down-menu > li.sfHover > a {
+            background: #3288d3;
+            border-bottom: 1px solid #3288d3
+        }
+
+        a:hover, .single-content p a, .single-content p a:visited, .top-menu a:hover, #site-nav .down-menu > .current-menu-item > a, #user-profile a:hover, .top-icon .be, .entry-meta a, .entry-meta-no a, .filter-tag:hover {
+            color: #3288d3;
+        }
+
+        .grid-cat-title:hover .title-i span, .cat-title:hover .title-i span, .cat-square-title:hover .title-i span, .widget-title:hover .title-i span, .cat-grid-title:hover .title-i span, .child-title:hover .title-i span, #respond input[type='text']:focus, #respond textarea:focus {
+            border: 1px solid #3288d3
+        }
+
+        .single-meta li a:hover, #fontsize:hover {
+            background: #3288d3;
+            border: 1px solid #3288d3
+        }
+
+        .ball-pulse > div {
+            border: 1px solid #3288d3
+        }
+
+        .searchbar button, #login input[type='submit'], .log-zd, .read-pl a:hover, .group-phone a, .deanm-main .de-button a {
+            background: #3288d3;
+        }
+
+        .cat-con-section {
+            border-bottom: 3px solid #3288d3;
+        }
+
+        .nav-search:hover:after {
+            color: #3288d3;
+        }
+
+        .down a, .meta-nav:hover, #gallery .callbacks_here a, .link-f a:hover, .ias-trigger-next a:hover, .orderby li a:hover, #respond #submit:hover, .comment-tool a:hover, .login-respond, .filter-on {
+            background: #3288d3;
+            border: 1px solid #3288d3
+        }
+
+        .entry-more a {
+            background: #3288d3;
+        }
+
+            .entry-more a:hover {
+                background: #666;
+            }
+
+        @@media screen and (min-width: 550px) {
+            .pagination span.current, .pagination a:hover, .favorite-e a:hover, .gr-cat-title a, .group-tab-hd .group-current {
+                background: #3288d3;
+                border: 1px solid #3288d3
+            }
+        }
+
+        @@media screen and (max-width: 550px) {
+            .pagination .prev, .pagination .next {
+                background: #3288d3;
+                border: 1px solid #3288d3
+            }
+        }
+
+        @@media screen and (min-width: 900px) {
+            #scroll li a:hover, .page-links span, .page-links a:hover span {
+                background: #3288d3;
+                border: 1px solid #3288d3
+            }
+        }
+
+        .thumbnail .cat, .format-img-cat, .title-l, .des-t, .des-p {
+            background: #3288d3;
+        }
+        /** 正文前两空格 **/
+        .single-content p {
+            text-indent: 0;
+        }
+            /** 图片居中 **/
+            .single-content p img {
+                margin: 0 auto;
+            }
+        /** 背景 **/
+        body {
+            background: url('~/web/images/bj.png') repeat top left scroll;
+        }
+        /** 通知框 **/
+        #sc_notice {
+            color: #7da33c;
+            background: #ecf2d6 url('~/web/images/sc_notice.png') -1px -1px no-repeat;
+            border: 1px solid #aac66d;
+            overflow: hidden;
+            margin: 10px 0;
+            padding: 15px 15px 15px 35px;
+        }
+
+        #sc_warn, .post-password-form {
+            color: #ad9948;
+            background: #fff4b9 url('images/sc_warn.png') -1px -1px no-repeat;
+            border: 1px solid #eac946;
+            overflow: hidden;
+            margin: 10px 0;
+            padding: 15px 15px 15px 35px;
+        }
+
+        #sc_error {
+            color: #c66;
+            background: #ffecea url('images/sc_error.png') -1px -1px no-repeat;
+            border: 1px solid #ebb1b1;
+            overflow: hidden;
+            margin: 10px 0;
+            padding: 15px 15px 15px 35px;
+        }
+
+        #sc_tips {
+            color: #777;
+            background: #eaeaea url('images/sc_tips.png') -1px -1px no-repeat;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            margin: 10px 0;
+            padding: 15px 15px 15px 35px;
+        }
+
+        #site-nav .down-menu li {
+            font-weight: bold;
+            font-size: 15px;
+        }
+    </style>
+    <script src="~/web/js/c.js"></script>
+    <script async src="~/web/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3163781045081197",
+            enable_page_level_ads: true
+        });
+    </script>
+</head>
+<body class="archive category category-tools category-3">
+    <div id="page" class="hfeed site">
+        <header id="masthead" class="site-header site-header-s">
+            <div id="header-main" class="header-main">
+                <nav id="top-header">
+                    <div class="top-nav">
+                        <div id="user-profile">
+                            <div class="user-login"><a href="#" target="_blank"><i class="be be-personoutline"></i>注册</a></div>
+
+                            <div class="nav-set">
+                                <div class="nav-login">
+                                    <a href="#login" class="flatbtn" id="login-main"><i class="be be-timerauto"></i>登录</a>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        @*<div class="menu-t-container">
+                                <ul id="menu-t" class="top-menu">
+                                    <li id="menu-item-4576" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4576"><a target="_blank" href="https://chrome.laod.cn/">Chrome离线包</a></li>
+                                    <li id="menu-item-4166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4166"><a target="_blank" href="http://music.laod.cn/">Music</a></li>
+                                    <li id="menu-item-3589" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3589"><a target="_blank" href="https://laod.cn/go.php?url=http://v.laod.cn">VIP视频解析</a></li>
+                                    <li id="menu-item-3217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3217"><a href="https://laod.cn/coderender">代码高亮</a></li>
+                                    <li id="menu-item-3336" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3336"><a href="https://laod.cn/invitation-code">邀请码</a></li>
+                                    <li id="menu-item-3465" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3465"><a href="https://laod.cn/notice/bulletin/">公告</a></li>
+                                    <li id="menu-item-3340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3340"><a href="https://laod.cn/file">归档</a></li>
+                                </ul>
+                            </div>*@
+                    </div>
+                </nav><!-- #top-header -->
+
+                <div id="menu-box">
+                    <div id="top-menu">
+                        <span class="nav-search"></span>
+                        <span class="mobile-login"><a href="#login" id="login-mobile"><i class="be be-timerauto"></i></a></span>
+                        <div class="logo-sites">
+                            <h1 class="site-title">
+                                <a href="/Home/Index"><img src="~/web/picture/2017-c.png" title="ChengQ博客" alt="ChengQ博客" rel="home" /><span class="site-name">ChengQ博客</span></a>
+                            </h1>
+                        </div><!-- .logo-site -->
+
+                        <div id="site-nav-wrap">
+                            <div id="sidr-close"><a href="#sidr-close" class="toggle-sidr-close">×</a></div>
+                            <div id="sidr-menu"><div class="toggle-sidr-menu">MENU</div></div>
+                            <nav id="site-nav" class="main-nav">
+                                <a href="#sidr-main" id="navigation-toggle" class="bars"><i class="be be-menu"></i></a>
+                                <div class="menu-x-container">
+                                    <ul id="menu-x" class="down-menu nav-menu">
+                                        <li id="menu-item-644" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-644">
+                                            <a href="/Home/Index"><i class="zm zm-shouye"></i><span class="font-text">首页</span></a>
+                                        </li>
+                                        <li id="menu-item-4314" class="menu-item menu-item-type-taxonomy menu-item-object-category  menu-item-4314">
+                                            <a href="/Home/Net"><i class="zm zm-feiji1"></i><span class="font-text">.Net</span></a>
+                                        </li>
+                                        @*current-menu-item*@
+                                        <li id="menu-item-647" class="menu-item menu-item-type-taxonomy menu-item-object-category  menu-item-647">
+                                            <a href="/Home/Sql"><i class="zm zm-gongju"></i><span class="font-text">数据库</span></a>
+                                        </li>
+                                        <li id="menu-item-1224" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1224"><a href="/Home/Java"><i class="zm zm-code"></i><span class="font-text">Java</span></a></li>
+                                        <li id="menu-item-3091" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3091"><a href="/Home/Other"><i class="zm zm-dianying"></i><span class="font-text">其他相关</span></a></li>
+                                        <li id="menu-item-690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-690"><a href="/Home/Message"><i class="zm zm-liuyan"></i><span class="font-text">留言版</span></a></li>
+                                        <li id="menu-item-691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-691">
+                                            <a href="#"><i class="zm zm-gengduo"></i><span class="font-text">查看更多</span></a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-3389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3389"><a href="/Home/New"><i class="zm zm-zuixin"></i><span class="font-text">最新文章</span></a></li>
+                                                <li id="menu-item-3338" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3338"><a href="/Home/BlackTechnology"><i class="zm zm-keji"></i><span class="font-text">黑科技</span></a></li>
+                                                <li id="menu-item-3339" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3339"><a href="/Home/NetworkSecurity"><i class="zm zm-anquan"></i><span class="font-text">网络安全</span></a></li>
+                                                <li id="menu-item-646" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-646"><a href="/Home/About"><i class="zm zm-zixun"></i><span class="font-text">关于本站</span></a></li>
+                                                <li id="menu-item-648" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-648"><a href="/Home/FreeResources"><i class="zm zm-mianfei-copy"></i><span class="font-text">免费资源</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav><!-- #site-nav -->
+                        </div><!-- #site-nav-wrap -->
+                        <div class="clear"></div>
+                    </div><!-- #top-menu -->
+                </div><!-- #menu-box -->
+            </div><!-- #menu-box -->
+        </header><!-- #masthead -->
+        <div id="search-main">
+            <div class="searchbar">
+                <form method="get" id="searchform" action="/Home/Search">
+                    <span class="search-input">
+                        <input type="text" value="" name="s" id="s" placeholder="输入搜索内容" required />
+                        <button type="submit" id="searchsubmit"><i class="be be-search"></i></button>
+                    </span>
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        @RenderBody()
+
+        <div id="footer-widget-box" class="site-footer">
+            <div class="footer-widget">
+                <aside id="nav_menu-2" class="widget widget_nav_menu wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="menu-di-container">
+                        <ul id="menu-di" class="menu">
+                            <li id="menu-item-3331" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3331">
+                                <a href="/Home/XinQing"><i class="zm zm-xinqingyiban"></i><span class="font-text">心情琐事</span></a>
+                            </li>
+                            <li id="menu-item-3350" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3350">
+                                <a href="/Home/ChengXunRS"><i class="zm zm-suiji"></i><span class="font-text">程序人生</span></a>
+                            </li>
+                            <li id="menu-item-3332" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3332">
+                                <a href="/Home/New"><i class="zm zm-mianfei-copy"></i><span class="font-text">最新文章</span></a>
+                            </li>
+                            <li id="menu-item-3349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3349">
+                                <a href="/Home/BlackTechnology"><i class="zm zm-shi"></i><span class="font-text">黑科技</span></a>
+                            </li>
+                            <li id="menu-item-3333" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3333">
+                                <a href="/Home/NetworkSecurity"><i class="zm zm-fangxiang"></i><span class="font-text">网络安全</span></a>
+                            </li>
+                            <li id="menu-item-3356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3356">
+                                <a href="/Home/FreeResources"><i class="zm zm-remen1"></i><span class="font-text">免费资源</span></a>
+                            </li>
+                            @*<li id="menu-item-3352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3352">
+                                <a href="https://laod.cn/tag"><i class="zm zm-biaoqian2"></i><span class="font-text">热门标签</span></a>
+                            </li>*@
+                            <li id="menu-item-3353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3353">
+                                <a href="/home/About"><i class="zm zm-iconset0142"></i><span class="font-text">关于本站</span></a>
+                            </li>
+                            <li id="menu-item-3351" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3351">
+                                <a href="/Home/JuanZheng"><i class="zm zm-aixinjuanzeng"></i><span class="font-text">捐赠本站</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </aside>
+                <aside id="php_text-2" class="widget php_text wow fadeInUp" data-wow-delay="0.3s">
+                    <h3 class="widget-title"><span class="s-icon"></span>关于本站</h3>
+                    <div class="textwidget widget-text">专注于IT前沿、谷歌学术、黑科技、网络安全、软件应用、连接互联网...</div>
+                    <div class="clear"></div>
+                </aside>
+                <aside id="feed-4" class="widget feed wow fadeInUp" data-wow-delay="0.3s">
+                    <h3 class="widget-title"><span class="s-icon"></span>关注我们</h3>
+                    <div id="feed_widget">
+                        <div class="feed-rss">
+                            <ul>
+                                @*<li class="weixin">
+                                    <span class="tipso_style" id="tip-w-j" data-tipso='<span class="weixin-qr">
+                                        <img src="~/web/picture/weixin.jpg" alt="weixin"/> 
+                                    <a title="微信"><i class="be be-weixin"></i></a>
+                                    </span>
+                                </li>*@
+                                <li class="feed"><a title="QQ:694340776" href="#" target="_blank" rel="external nofollow"><i class="be be-rss"></i></a></li>
+                                <li class="tsina"><a title="微博" href="https://weibo.com/qingzai1993" target="_blank" rel="external nofollow"><i class="zm zm-weibo"></i></a></li>
+                                <li class="tqq"><a title="694340776@qq.com" href="#" target="_blank" rel="external nofollow"><i class="zm zm-yaoqingma2"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+                </aside>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="site-info">
+                Copyright © 2018 <a href="/home/index">ChengQ博客</a> 版权所有.  粤ICP备17047319号
+                                 <span class="add-info" id="daojishi">
+                                     
+                                 </span>
+            </div><!-- .site-info -->
+        </footer><!-- .site-footer -->
+        <div id="login">
+
+            <div id="login-tab" class="login-tab-product fadeInDown animated">
+                <h2 class="login-tab-hd">
+                    <span class="login-tab-hd-con"><a href="javascript:">登录</a></span>
+                    <span class="login-tab-hd-con"><a href="javascript:">注册</a></span>
+                    <span class="login-tab-hd-con"><a href="javascript:">找回密码</a></span>
+                </h2>
+
+                <div class="login-tab-bd login-dom-display">
+                    <div class="login-tab-bd-con login-current">
+                        <div id="tab1_login" class="tab_content_login">
+                            <form method="post" action="#" class="wp-user-form">
+                                <div class="username">
+                                    <label for="user_login">用户名</label>
+                                    <input type="text" name="log" value="" size="20" id="user_login" tabindex="11" />
+                                </div>
+                                <div class="password">
+                                    <label for="user_pass">密码</label>
+                                    <input type="password" name="pwd" value="" size="20" id="user_pass" tabindex="12" />
+                                </div>
+                                <div class="login-form"></div>
+                                <div class="login_fields">
+                                    <div class="rememberme">
+                                        <label for="rememberme">
+                                            <input type="checkbox" name="rememberme" value="forever" checked="checked" id="rememberme" tabindex="13" />记住我的登录信息
+                                        </label>
+                                    </div>
+                                    <input type="submit" name="user-submit" value="登录" tabindex="14" class="user-submit" />
+                                    <input type="hidden" name="redirect_to" value="/tools/" />
+                                    <input type="hidden" name="user-cookie" value="1" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="login-tab-bd-con reg-url">
+                        <a href="#" target="_blank">立即注册</a>					
+                        <p class="message">点击“立即注册”转到用户注册页面。</p>
+                    </div>
+
+                    <div class="login-tab-bd-con">
+                        <div id="tab3_login" class="tab_content_login">
+                            <p class="message">输入用户名或电子邮箱地址，您会收到一封新密码链接的电子邮件。</p>
+                            <form method="post" action="#" class="wp-user-form">
+                                <div class="username">
+                                    <label for="user_login" class="hide">用户名或电子邮件地址</label>
+                                    <input type="text" name="user_login" value="" size="20" id="user_login" tabindex="1001" />
+                                </div>
+                                <div class="login_fields">
+                                    <div class="login-form"></div>
+                                    <input type="submit" name="user-submit" value="获取新密码" class="user-submit" tabindex="1002" />
+                                    <input type="hidden" name="redirect_to" value="/tools/?reset=true" />
+                                    <input type="hidden" name="user-cookie" value="1" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div><ul id="scroll">
+            <li class="log log-no"><a class="log-button" title="文章目录"><i class="be be-menu"></i></a><div class="log-prompt"><div class="log-arrow">文章目录</div></div></li>
+            <li><a class="scroll-home" href="#" title="首页" rel="home"><i class="be be-home"></i></a></li>
+            <li><a class="scroll-h" title="返回顶部"><i class="be be-arrowup"></i></a></li>
+            <li><a class="scroll-b" title="转到底部"><i class="be be-arrowdown"></i></a></li>
+            <li class="gb2-site"><a id="gb2big5"><span>繁</span></a></li>
+
+        </ul>
+    </div><!-- .site -->
+    <script type='text/javascript' src='~/web/js/slides.js'></script>
+    <script type='text/javascript' src='~/web/js/wow.js'></script>
+    <script type='text/javascript' src='~/web/js/sticky.js'></script>
+    <script type='text/javascript' src='~/web/js/jquery-ias.js'></script>
+    <script type='text/javascript' src='~/web/js/jquery.lazyload.js'></script>
+    <script type='text/javascript' src='~/web/js/tipso.js'></script>
+    <script type='text/javascript' src='~/web/js/script.js'></script>
+    <script type='text/javascript' src='~/web/js/flexisel.js'></script>
+    <script type='text/javascript' src='~/web/js/superfish.js'></script>
+    <script type='text/javascript' src='~/web/js/gb2big5.js'></script>
+    <script type="text/javascript">var ias = $.ias({ container: "#main", item: "article", pagination: "#nav-below", next: "#nav-below .nav-previous a", }); ias.extension(new IASTriggerExtension({ text: '<i class="be be-circledown"></i>更多', offset: 2, })); ias.extension(new IASSpinnerExtension()); ias.extension(new IASNoneLeftExtension({ text: '已是最后', })); ias.on('rendered', function (items) { $("img").lazyload({ effect: "fadeIn", failure_limit: 70 }); })</script>
+</body>
+</html>
+<!-- Dynamic page generated in 0.119 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2018-05-18 10:10:54 -->
+<!-- Compression = gzip -->

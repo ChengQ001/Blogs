@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChengQ.Common\ChengQ.Common.csproj" />
+    <ProjectReference Include="..\ChengQ.Data\ChengQ.Data.csproj" />
+    <ProjectReference Include="..\Entity\ChengQ.Entity.csproj" />
+  </ItemGroup>
+
+</Project>

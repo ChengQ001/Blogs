@@ -1,0 +1,9 @@
+C:\Users\Administrator.SKY-20180301EDX\Desktop\Code\个人博客项目\Entity\bin\Debug\netcoreapp2.0\ChengQ.Entity.deps.json
+C:\Users\Administrator.SKY-20180301EDX\Desktop\Code\个人博客项目\Entity\bin\Debug\netcoreapp2.0\ChengQ.Entity.dll
+C:\Users\Administrator.SKY-20180301EDX\Desktop\Code\个人博客项目\Entity\bin\Debug\netcoreapp2.0\ChengQ.Entity.pdb
+C:\Users\Administrator.SKY-20180301EDX\Desktop\Code\个人博客项目\Entity\obj\Debug\netcoreapp2.0\ChengQ.Entity.csprojAssemblyReference.cache
+C:\Users\Administrator.SKY-20180301EDX\Desktop\Code\个人博客项目\Entity\obj\Debug\netcoreapp2.0\ChengQ.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.SKY-20180301EDX\Desktop\Code\个人博客项目\Entity\obj\Debug\netcoreapp2.0\ChengQ.Entity.AssemblyInfoInputs.cache
+C:\Users\Administrator.SKY-20180301EDX\Desktop\Code\个人博客项目\Entity\obj\Debug\netcoreapp2.0\ChengQ.Entity.AssemblyInfo.cs
+C:\Users\Administrator.SKY-20180301EDX\Desktop\Code\个人博客项目\Entity\obj\Debug\netcoreapp2.0\ChengQ.Entity.dll
+C:\Users\Administrator.SKY-20180301EDX\Desktop\Code\个人博客项目\Entity\obj\Debug\netcoreapp2.0\ChengQ.Entity.pdb
